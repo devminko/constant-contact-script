@@ -113,12 +113,11 @@ const compareLists = async () => {
 };
 
 // ********** SCRIPT SCHEDULE ********** //
-compareLists();
-// const delay = 1000 * 60 * 60 * 3;
-// setInterval(() => {
-//   compareLists();
-//   console.log('Script Executed');
-// }, delay);
+const delay = 1000 * 60 * 60 * 3;
+setInterval(() => {
+  compareLists();
+  console.log("Script Executed");
+}, delay);
 
 // ********** FUNCTIONS ********** //
 const removeContactsEndpoints = async (emailsArray) => {
